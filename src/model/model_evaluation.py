@@ -1,5 +1,3 @@
-# updated model evaluation
-
 import numpy as np
 import pandas as pd
 import pickle
@@ -9,14 +7,10 @@ import logging
 import mlflow
 import mlflow.sklearn
 import dagshub
-import os
 
-
-import dagshub
 
 mlflow.set_tracking_uri("https://dagshub.com/sahilkarale/mlops-mini-project.mlflow")
 dagshub.init(repo_owner='sahilkarale', repo_name='mlops-mini-project', mlflow=True)
-
 
 # logging configuration
 logger = logging.getLogger('model_evaluation')
